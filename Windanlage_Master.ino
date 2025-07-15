@@ -1,14 +1,16 @@
+// the following "/[...]" or "(/[...]) will be used to explain more in depth or to lead to other explicit resources.
+
 #include <WiFi101.h>
 WiFiServer server(80);
 
 float wige = 8;
 bool anaus = true;
 bool einmalausfuehren = true;
-int relaisPin = 5; 
+int relaisPin = 5; // !Digitaler! GPIO-PIN für Relay (in diesem Fall "5" /siehe Dokumentation: "Wiring-RX")
 float humidity = 0.0;
 float temperature = 0.0;
-char ssid[] = "INDU4GY"; // Netzwerk Name/SSID
-char pass[] = "indu8764"; // Password 
+char ssid[] = "INDU4GY"; // Dein Netzwerk Name/SSID
+char pass[] = "indu8764"; // Dein Password 
 
 IPAddress ip(192, 168, 1, 200);     // Server-IP (Sensor)
 IPAddress gateway(192, 168, 1, 1);  // Router-IP
@@ -20,7 +22,7 @@ void setup() {
   Serial.begin(9600);
   while (!Serial);
 
-  WiFi.config(ip, gateway, subnet); // Setzen fester IP
+  WiFi.config(ip, gateway, subnet); // Setzen fester IP 
   WiFi.begin(ssid, pass);
 
   Serial.print("Verbinde mit WLAN...");
@@ -40,7 +42,7 @@ void loop() {
   WiFiClient client = server.available();
   if (client) {
     if (einmalausfuehren == true){
-      Serial.println("Client verbunden!"); //Verbinden mit Sensor-Arduino) erfolgreich!
+      Serial.println("Client verbunden!"); // Verbinden mit Sensor- (/RX-) Arduino erfolgreich!
       einmalausfuehren = false;
     }
     
@@ -72,10 +74,10 @@ void loop() {
     humidity = lfStr.toFloat();
     temperature = tStr.toFloat();
 
-    Serial.print("Luftfeuchtigkeit: ");
+    Serial.print("Luftfeuchtigkeit: "); // Anzeigen der <imp.> (/importierten) Luftfeuchtigkeit-Werten von TX-Arduino
     Serial.println(humidity);
 
-    Serial.print("Temperatur: ");
+    Serial.print("Temperatur: "); // Anzeigen der <imp.> (/importierten) Temperatur-Werten von TX-Arduino
     Serial.println(temperature);
   } else {
     Serial.println("Fehler: 'Luftfeuchtigkeit' oder 'Temperatur' nicht gefunden!");
