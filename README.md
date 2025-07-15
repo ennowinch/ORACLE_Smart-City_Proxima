@@ -1,1 +1,1 @@
-# ORACLE_Arduino-SmartCity_temperature_windpowerplant
+# ORACLE SmartCity : "Proxima" (2025)
