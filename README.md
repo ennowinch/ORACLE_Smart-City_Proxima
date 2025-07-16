@@ -9,8 +9,9 @@ Structure:
 
 
 1. Weather Station - TX-Arduino (Arduino (Type): MKR-1000 WiFi)
-   Expl. : Transmission-Arduino [--> TX] wired up to a combination sensor [Humidity (+) Temperature] (DHT 11) that reads the data and displays it in form of Text in 
+   Expl. : Transmission-Arduino [--> TX] wired up to a combination sensor [Humidity (+) Temperature] (DHT 11) that reads the data and displays in the readable form in the Serial Monitor and is able to export them over Wifi to the "RX-Arduino" [/_Recieving Arduino_ (PowerPlant Regulator Arduino)].
+   Requirments : Arduino with WiFi capabilities, Arduino IDE [/_"Integratet Develloper Environment"_]
 
  -- Imprint --
 
-## License
+## License 
