@@ -9,7 +9,7 @@ Structure:
 
 
 1. Weather Station - TX-Arduino (Arduino (Type): MKR-1000 WiFi)
-   Expl. Transmission-Arduino [--> TX] wired up to 
+   Expl. : Transmission-Arduino [--> TX] wired up to a combination sensor [Humidity (+) Temperature] (DHT 11) that reads the data and displays it in form of Text in 
 
  -- Imprint --
 
