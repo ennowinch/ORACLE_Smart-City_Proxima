@@ -117,4 +117,4 @@ void loop() {
   }
     
 } 
-//The code was developed by Luise J. & Enno W. during their student internship at Oracle.
+ //The code was developed by Luise J. & Enno W. during their student internship at Oracle. All rights reserged --> LICENSE 
