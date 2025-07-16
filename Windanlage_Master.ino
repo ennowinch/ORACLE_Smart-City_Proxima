@@ -1,8 +1,7 @@
-# Copyright (c) 2025 Enno Winch
-# 
-# This file is part of the [Oracle SmartCity - Proxima] project and is licensed under the MIT License.
-# See the "LICENSE" file in the root directory for details.
-
+Copyright (c) 2025 Enno Winch
+ 
+// This file is part of the [Oracle SmartCity - Proxima] project and is licensed under the MIT License.
+//See the "LICENSE" file in the root directory for details.
 
 // the following "/[...]" or "(/[...]) will be used to explain more in depth or to lead to other explicit resources.
 
