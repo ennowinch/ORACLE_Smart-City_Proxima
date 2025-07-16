@@ -5,7 +5,7 @@ A renewable City model of a city of the future with intelligent integration into
 Structure: 
 1) PowerPlant Regulator - Arduino (_so called: "Windanlage_Master.ino"_)
 2) WeatherStation - Arduino (_so called: "temperature.ino"_)
-3) SmartTrain - Rasberry Pi 3 
+3) SmartTrain - Rasberry Pi 3 (_so called: "Bluetooth_Connection_LEGO_Hub"_)
 
  -- Imprint --
 
