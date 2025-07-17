@@ -10,11 +10,13 @@ Structure:
 
 1. Weather Station - TX-Arduino (Arduino (Type): MKR-1000 WiFi)
    Expl. : Transmission-Arduino [--> TX] wired up to a combination sensor [Humidity (+) Temperature] (DHT 11), that reads the data and displays in the readable form in the Serial Monitor and is able to export them over WiFI to the "RX-Arduino" [/_Recieving Arduino_ (PowerPlant Regulator Arduino)].
-   Requirments : Arduino with WiFi capabilities, Arduino IDE [/_"Integratet Develloper Environment"_] and an Arduino IDE Library (AIL) AddOn, called: "Wifi101.h" to share the read out data over WLAN to other instances.
+   Requirments : Arduino with WiFi capabilities, Arduino IDE [/_"Integrated Devellopment Environment"_] and an Arduino IDE Library (AIL) AddOn, called: "Wifi101.h" to share the read out data over WLAN to other instances.
    Build. : 
 
 3. Power Plant Regulation - RX-Arduino (Arduino (Type): MKR-1000 WiFi)
-   Expl. : Receiving-Arduino [--> RX] wired up to a Relay [max. 5V Operating Voltage], that switches the LEGO M-Motor on/off to simlulate different weather conditions. The relay has a max. switchable Voltage of 230V at 50-60 Hz and needs 5V at the (+)-Port, Ground at the (-)-Port to operate and about 3,3V on the (S)-Port [S = Data Port] to switch the relay on / off --> _more under: "Power-Plant-(RX) / _ Branch_. It imports the data via WiFi and reacts depending on the set switch (_so called: "
+   Expl. : Receiving-Arduino [--> RX] wired up to a Relay [max. 5V Operating Voltage], that switches the LEGO M-Motor on/off to simlulate different weather conditions. The relay has a max. switchable Voltage of 230V at 50-60 Hz and needs 5V at the (+)-Port, Ground at the (-)-Port to operate and about 3,3V on the (S)-Port [S = Data Port] to switch the relay on / off --> _more under: "Power-Plant-(RX) / _ Branch_. It imports the data via WiFi from the "TX-Arduino" [/_Transmitting Arduino_ (WeatherStation Arduino)] and reacts depending on the set switch (_so called: "if(humidity >= 80)"_) [/see Code].
+   Requirments : Arduino with WiFi capabilities, Arduino IDE [/_"Integrated Devellopment Environment"_] and an Arduino IDE Library (AIL) AddOn, called: "Wifi101.h" to get the data from the other Arduino over WLAN to instances.
+
 
  -- Imprint --
 
