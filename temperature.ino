@@ -1,10 +1,10 @@
 #include "DHT.h"
 #include <WiFi101.h>
 
-#define DHTPIN 2      // Pin, an dem der DHT11 angeschlossen ist
+#define DHTPIN 2      // Pin, an dem der DHT11 angeschlossen ist (/Sensor)
 #define DHTTYPE DHT11 // DHT 11 Sensor
-const char* ssid = "INDU4GY";
-const char* password = "indu8764";
+const char* ssid = "INDU4GY"; // (YOUR SSID)
+const char* password = "indu8764"; // (YOUR PASSWORD)
 char server[] = "192.168.1.200";
 bool einmalausfuehren = true;
 
