@@ -1,5 +1,5 @@
-#include "DHT.h"
-#include <WiFi101.h>
+#include "DHT.h" // Verwendung der DHT-11 Sensor Bibliotek
+#include <WiFi101.h> // WiFi Bibliothek
 
 #define DHTPIN 2      // Pin, an dem der DHT11 angeschlossen ist (/Sensor)
 #define DHTTYPE DHT11 // DHT 11 Sensor
