@@ -1,4 +1,4 @@
-#include "DHT.h" // Verwendung der DHT-11 Sensor Bibliotek
+#include "DHT.h" // Verwendung der DHT-11 Sensorbibliothek
 #include <WiFi101.h> // WiFi Bibliothek
 
 #define DHTPIN 2      // Pin, an dem der DHT-11 angeschlossen ist (/Sensor)
@@ -47,7 +47,7 @@ void loop() {
   Serial.println(" °C");
 
   if(humidity >= 80){
-    Serial.println("Attention: very high humdidity!");
+    Serial.println("Attention: very high humidity!");
   }
 
   if (client.connect(server, 80)) {
@@ -70,4 +70,4 @@ void loop() {
 
   delay(2000); // alle 5 Sekunden neu senden
 }
-// The code was developed by Luise J. during her student internship at Oracle. All rights reserved --> see "LICENSE"
+// The code was developed by Luise J. during her student internship at Oracle. All rights reserved --> see "LICENSE" for details.
