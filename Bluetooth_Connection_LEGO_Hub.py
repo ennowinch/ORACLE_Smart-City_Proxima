@@ -1,4 +1,5 @@
 import asyncio
+
 from bleak import BleakClient # Bluetooth client
 
 # UUID for LEGO Hub Characteristic (Wireless Protocol v3)
@@ -7,11 +8,11 @@ CHAR_UUID = "00001624-1212-efde-1623-785feabcd123"
 # MAC-Adress
 ADDRESS = "90:84:2B:11:3B:47"
 
-# Command to controll the motor
+# Command to control the motor
 def set_motor_command(power):
     return bytearray([0x08, 0x00, 0x81, 0x00, 0x11, 0x51, 0x00, power])
 
-# Mainloop
+# Main Loop
 async def main():
     
     async with BleakClient(ADDRESS) as client:
@@ -29,3 +30,5 @@ async def main():
         print("Motor stopped.")
 
 asyncio.run(main())
+
+# The code was developed by Luise J. during her student internship at Oracle. All rights reserved --> see "LICENSE" for details.
