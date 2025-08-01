@@ -68,6 +68,6 @@ void loop() {
     Serial.println("Verbindung fehlgeschlagen");
   }
 
-  delay(2000); // alle 5 Sekunden neu senden
+  delay(2000); // alle 2 Sekunden neu senden
 }
 // The code was developed by Luise J. during her student internship at Oracle. All rights reserved --> see "LICENSE" for details.
