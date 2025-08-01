@@ -70,3 +70,4 @@ void loop() {
 
   delay(2000); // alle 5 Sekunden neu senden
 }
+// The code was developed by Luise J. during her student internship at Oracle. All rights reserged --> see "LICENSE"
